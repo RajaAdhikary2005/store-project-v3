@@ -1,0 +1,181 @@
+/* ===== External CSS for Store Website ===== */
+
+/* basic reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f7fdf7; /* Very subtle mint-white background to add depth */
+    color: #222;
+}
+
+/* link division (navigation bar) - LIGHT GREEN */
+.linkDiv {
+    background-color: lightgreen;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #888;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
+
+/* navigation links */
+.linkDiv a {
+    margin: 0 20px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid #555;
+    background-color: #c8f7c8;
+    border-radius: 8px; 
+    transition: all 0.2s ease-in-out; /* smoother transition */
+    display: inline-block;
+}
+
+.linkDiv a:hover {
+    background-color: #a0e0a0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* content division - LIGHT YELLOW */
+.contentDiv {
+    background-color: lightyellow;
+    padding: 30px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 900px; /* Prevents it from stretching infinitely on big monitors */
+    border: 1px solid #ddd;
+    border-radius: 12px; 
+    min-height: 400px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.08); /* Softer, larger floating shadow */
+}
+
+/* heading style */
+h2, h3 {
+    color: #004d00; /* Dark green text */
+    border-bottom: 3px solid lightgreen; 
+    padding-bottom: 8px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* table for products */
+.prodTable {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+}
+
+.prodTable th, .prodTable td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.prodTable th {
+    background-color: lightgreen; 
+    color: black;
+    font-size: 17px;
+    text-transform: uppercase; /* Makes headers stand out */
+    letter-spacing: 1px;
+}
+
+/* Add Product form table styling */
+form > table {
+    background-color: #ffffe0; /* light yellow */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+form > table td {
+    padding: 8px 10px;
+    font-weight: bold;
+}
+
+/* form styling */
+.orderForm label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.orderForm input[type="text"],
+.orderForm input[type="number"],
+.orderForm select {
+    width: 300px;
+    padding: 8px;
+    margin-top: 4px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffe0; /* Very light yellow for inputs */
+    transition: all 0.3s; /* Smooth glow transition */
+}
+
+.orderForm input[type="submit"], 
+input[type="submit"] {
+    margin-top: 18px;
+    padding: 8px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: lightgreen; /* Green button */
+    color: black;
+    border: 1px solid #888;
+    border-radius: 6px; 
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.orderForm input[type="submit"]:hover,
+input[type="submit"]:hover {
+    background-color: #a0e0a0; /* Lighter green on hover */
+    transform: scale(1.02); /* Very slight button enlarge */
+}
+
+/* error message */
+.errMsg {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* 1 & 2. Table row hover highlight and Zebra striping */
+.prodTable tr:nth-child(even) {
+    background-color: #fafafa;
+}
+.prodTable tr:hover {
+    background-color: #f0fdf0; /* faint green on hover */
+}
+
+/* 3. Input focus glow */
+.orderForm input[type="text"]:focus,
+.orderForm input[type="number"]:focus,
+.orderForm select:focus {
+    outline: none;
+    border: 2px solid lightgreen;
+    box-shadow: 0 0 5px lightgreen;
+}
+
+/* 4. Delete Button (Red) */
+.deleteBtn {
+    background-color: #ffb3b3 !important; /* light red */
+    border: 1px solid #cc0000 !important;
+}
+.deleteBtn:hover {
+    background-color: #ff9999 !important;
+}
+
+/* 5. Centered Order Form Box */
+.orderForm {
+    width: 400px;
+    margin: 0 auto; /* Centers the form horizontally */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 1px solid #ccc;
+}
